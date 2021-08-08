@@ -73,5 +73,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.3.9" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.8.2" level="project" />
     <orderEntry type="library" name="Maven: org.mariuszgromada.math:MathParser.org-mXparser:4.4.2" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:20200518" level="project" />
   </component>
 </module>

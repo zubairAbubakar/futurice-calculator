@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Base64;
 
 @RestController
-@RequestMapping("calculator/v1/api")
+@RequestMapping("/api/v1")
 public class CalculatorController {
 
     @GetMapping(value = "/calculus", produces = "application/json")

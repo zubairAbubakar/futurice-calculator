@@ -21,7 +21,7 @@ class CalculatorControllerTest {
 
     @Test
     public void shouldTestValidExpression() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("http://localhost:8080/calculator/v1/api/calculus?query=2 + 2"))
+        mockMvc.perform(MockMvcRequestBuilders.get("http://localhost:8080/api/v1/calculus?query=2 + 2"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.error").value(false))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.result").value(4))
                 .andExpect(status().isOk());
@@ -30,7 +30,7 @@ class CalculatorControllerTest {
 
     @Test
     public void shouldTestInValidExpression() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("http://localhost:8080/calculator/v1/api/calculus?query=2 +Ws-va 2"))
+        mockMvc.perform(MockMvcRequestBuilders.get("http://localhost:8080/api/v1/calculus?query=2 +Ws-va 2"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.error").value(true))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.message").value("Invalid Expression"))
                 .andExpect(status().isBadRequest());

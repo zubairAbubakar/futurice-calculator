@@ -9,10 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.zlab.futurice</groupId>
-	<artifactId>calculator</artifactId>
+	<artifactId>futurice-calculator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>calculator</name>
 	<description>A simple web service to implement a calculator</description>
+	<packaging>war</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
